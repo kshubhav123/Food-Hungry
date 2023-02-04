@@ -1,0 +1,1172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paco Restro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-color: #fffcf7;
+        }
+
+        .nav-link:hover {
+            color: #ffbd3d !important;
+            font-weight: bold;
+            transition: 0.8;
+            background-color: #fffcf7 !important;
+        }
+
+        
+        .nav-link:focus {
+            color: #ffbd3d !important;
+            font-weight: bold;
+            transition: 0.8;
+            background-color: #fffcf7 !important;
+        }
+
+        .banner-paragraph {
+            text-align: justify;
+        }
+
+        .card-subtext {
+            text-align: justify;
+        }
+
+        /* .banner-heading {
+            font-size: 3.5rem !important;
+        } */
+    </style>
+
+    <!--1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg pt-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 card-text px-4 fw-bold" href="#"><i
+                    class="fa-solid fa-utensils bg-warning p-2 rounded-circle"></i> PACO RESTRO</a>
+
+            <button class="navbar-toggler bg-warning border-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-warning"></span>
+            </button>
+
+            <div class="collapse navbar-collapse px-4" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto px-5 p-3 pb-1 justify-content-center align-items-center mb-2 mb-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark p-3 pb-1 px-4 active" aria-current="page" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark p-3 pb-1 px-4" aria-current="page" href="#portfolio">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark p-3 pb-1 px-4" aria-current="page" href="#contact">REVIEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark p-3 pb-1 px-4" aria-current="page" href="#contact">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark p-3 pb-1 px-4" aria-current="page" href="#about">ABOUTUS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark p-3 pb-1 px-4" aria-current="page" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+                <form class="d-flex p-3 px-5 pb-0 justify-content-center" role="search">
+                    <a class="btn btn-primary w-100 px-3 p-2 fw-bold rounded-pill bg-warning border-warning"
+                        href="#about">Reserve Table</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. BANNER -->
+    <div class="container-fluid pt-4">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-12 col-lg-5 d-flex align-items-center">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body border-0 px-4">
+                        <div class="fw-bold fs-1 lh-base">We Server The Test You Love in your Favroit List </div>
+                        <div class="text-secondary fs-6 mt-2 px-1 lh-base w-100 banner-paragraph"> Lorem ipsum dolor sit
+                            amet consectetur
+                            adipisicing elit. Beatae illo aliquid neque velit. Beatae labore earum recusandae nulla nisi
+                            nihil, obcaecati
+                            consequuntur modi accusamus aperiam mollitia sapiente ipsam dolores ipsum delectus non?
+                        </div>
+                        <div class="container-fluid mb-3">
+                            <button class="btn btn-warning text-white fs-5 px-3 me-4 py-2 rounded-pill mt-3"> Explore
+                                Food</button>
+                            <button class="btn btn-outline-warning fs-5 px-3 py-2 rounded-pill mt-3"> <i
+                                    class="fa fa-search px-2"></i>Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+                <img src="abc.png" class="img-fluid rounded-circle w-100 h-100" alt="">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <!--3. POPULAR DISHESH -->
+    <div class="container pt-5">
+        <div class="d-flex justify-content-between">
+            <div class="fs-1 fw-bold">POPULAR DISHESH</div>
+            <div class="fs-6">
+                <button id="slideleft" class="btn btn-warning my-2"> <i
+                        class="fa fa-arrow-left fs-4 p-1 rounded-circle bg-warning"></i> </button>
+                <button id="slideright" class="btn btn-warning"> <i
+                        class="fa fa-arrow-right fs-4 p-1 rounded-circle bg-warning"></i> </button>
+            </div>
+        </div>
+    </div>
+
+    <!--4. POPULAR DISHESH Cards-->
+    <div class="container py-4 w-100" id="scroll-Container" style="overflow-x: hidden;transition: 3.s;">
+        <div class="flex-row d-inline-flex">
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card One </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Two </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Three </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Four </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Five </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Six </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Sevan </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Eight </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Nine </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Ten </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+            <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                <img src="abc.png" class="w-100 img-fluid" alt="" />
+                <div class="fs-4 mt-3 text-center"> Card Elevan </div>
+                <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Ipsam </div>
+                <div class="d-flex justify-content-between p-3 pt-4">
+                    <div class="fs-4 text-center"> $33.55 </div>
+                    <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--5. About-->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <img src="xyz.png" class="img-fluid w-100 rounded-3 h-100 bg-transparent" alt="" />
+            </div>
+            <div class="col-md-12 col-lg-5 d-flex align-items-center">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body border-0 px-4">
+                        <div class="fw-bold fs-1 lh-base ">We Server The Test You Love in your Favroit List </div>
+                        <div class="text-secondary fs-6 mt-2 px-1 lh-base w-100 banner-paragraph"> Lorem ipsum dolor
+                            sit amet consecteturadipisicing elit. Beatae illo aliquid neque velit. Beatae labore
+                            earum recusandae nulla nisi nihil, obcaecati consequuntur modi accusamus aperiam
+                            mollitia sapiente ipsam dolores ipsum delectus non?
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6 mt-2">
+                                <div class="fs-6 text-secondary py-2"> <i
+                                        class="fa-solid fa-mug-hot border rounded-circle p-2 mx-1 bg-warning text-white"></i>
+                                    OnlineOrder</div>
+                                <div class="fs-6 text-secondary py-2"><i
+                                        class="fa-solid fa-kitchen-set border rounded-circle p-2 mx-1 bg-warning text-white"></i>
+                                    24/7 Service</div>
+                                <div class="fs-6 text-secondary py-2"> <i
+                                        class="fa-solid fa-sink border rounded-circle p-2 mx-1 bg-warning text-white"></i>
+                                    Clean Kitchen</div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 mt-1">
+                                <div class="fs-6 text-secondary py-2"><i
+                                        class="fa-solid fa-note-sticky border rounded-circle p-2 mx-1 bg-warning text-white"></i>
+                                    Reservation</div>
+                                <div class="fs-6 text-secondary py-2"><i
+                                        class="fa-solid fa-umbrella-beach border rounded-circle p-2 mx-1 bg-warning text-white"></i>
+                                    Organized Foodie</div>
+                                <div class="fs-6 text-secondary py-2"><i
+                                        class="fa-solid fa-pepper-hot border rounded-circle p-2 mx-1 bg-warning text-white"></i>
+                                    Super Chefs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--6. OUR REGULAR MENU PACK -->
+    <div class="container">
+        <div class="h1 text-center mt-2 mb-5">OUR MENU DEAL PACK</div>
+
+        <ul class="nav nav-pills d-flex justify-content-between" id="pills-tab" role="tablist">
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark bg-warning rounded-3 px-2 fs-5 mb-2" id="pills-SpecialFood-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-SpecialFood" type="button" role="tab"
+                    aria-controls="pills-SpecialFood" aria-selected="true">Special Food</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark bg-warning rounded-3 px-3 fs-5 mb-2" id="pills-Maxican-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-Maxican" type="button" role="tab"
+                    aria-controls="pills-Maxican" aria-selected="false">Maxican</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark bg-warning rounded-3 px-3 fs-5 mb-2" id="pills-Italian-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-Italian" type="button" role="tab"
+                    aria-controls="pills-Italian" aria-selected="false">Italian</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark bg-warning rounded-3 px-3 fs-5 mb-2" id="pills-Japanese-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-Japanese" type="button" role="tab"
+                    aria-controls="pills-Japanese" aria-selected="false">Japanese</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark bg-warning rounded-3 px-3 fs-5 mb-2" id="pills-Drinks-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-Drinks" type="button" role="tab"
+                    aria-controls="pills-Drinks" aria-selected="false">Drinks</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark bg-warning rounded-3 px-3 fs-5 mb-2" id="pills-Lunch-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-Lunch" type="button" role="tab"
+                    aria-controls="pills-Lunch" aria-selected="false">Lunch</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-SpecialFood" role="tabpanel"
+                aria-labelledby="pills-SpecialFood-tab" tabindex="0">
+                <div class="row pt-5 pb-3 mx-0 d-flex container justify-content-center container">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-4">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Special Food </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $33.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Special Food </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $33.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Special Food </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $33.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Special Food </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $33.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Special Food </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $33.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Special Food </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $33.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Special Food </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $33.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Special Food </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $33.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Maxican -->
+            <div class="tab-pane fade" id="pills-Maxican" role="tabpanel" aria-labelledby="pills-Maxican-tab"
+                tabindex="0">
+                <div class="row pt-5 pb-3 d-flex container justify-content-center container">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-4">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Maxican </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $50.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Maxican </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $50.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Maxican </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $50.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Maxican </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $50.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Maxican </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $50.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Maxican </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $50.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Maxican </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $50.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Italian -->
+            <div class="tab-pane fade" id="pills-Italian" role="tabpanel" aria-labelledby="pills-Italian-tab"
+                tabindex="0">
+
+                <div class="row pt-5 pb-3 d-flex container justify-content-center container">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-4">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Italian </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $81.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Italian </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $81.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Italian </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $81.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Italian </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $81.55 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+            <!-- Japanese -->
+            <div class="tab-pane fade" id="pills-Japanese" role="tabpanel" aria-labelledby="pills-Japanese-tab"
+                tabindex="0">
+
+
+                <div class="row pt-5 pb-3 d-flex container justify-content-center container">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-4">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Japanese </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $68.23 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Japanese </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $68.23 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Japanese </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $68.23 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Japanese </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $68.23 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Japanese </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $68.23 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Japanese </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $68.23 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+            <!-- Drinks -->
+            <div class="tab-pane fade" id="pills-Drinks" role="tabpanel" aria-labelledby="pills-Drinks-tab"
+                tabindex="0">
+                <div class="row pt-5 pb-3 d-flex container justify-content-center container">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-4">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Drinks </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $105.88 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Drinks </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $105.88 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="tab-pane fade" id="pills-Lunch" role="tabpanel" aria-labelledby="pills-Lunch-tab" tabindex="0">
+
+                <div class="row pt-5 pb-3 d-flex container justify-content-center container">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-4">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4 col-xl-3 mb-3">
+                        <div class="card p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:16rem;">
+                            <img src="abc.png" class="w-100 img-fluid" alt="" />
+                            <div class="fs-4 mt-3 text-center"> Lunch </div>
+                            <div class="fs-6 mt-3 card-subtext text-center text-secondary"> Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Ipsam </div>
+                            <div class="d-flex justify-content-between p-3 pt-4">
+                                <div class="fs-4 text-center"> $56.00 </div>
+                                <button class="btn btn-outline-warning fs-6 text-center"> Add To Cart </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!--7. MAKE RESERVE TABLE -->
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body border-0 px-4">
+                        <div class="fw-bold fs-1 lh-base ">Do You Have Any Dinner Plan Today ? Reserve You Table </div>
+                        <div class="text-secondary fs-6 mt-2 px-1 lh-base w-100 banner-paragraph"> Lorem ipsum dolor
+                            sit amet consecteturadipisicing elit. Beatae illo aliquid neque velit. Beatae labore
+                            earum recusandae nulla nisi nihil, obcaecati consequuntur modi accusamus aperiam
+                        </div>
+                        <button class="btn btn-outline-warning mt-3 fw-bold rounded-pill">Make Reserve</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+                <img src="https://www.pngall.com/wp-content/uploads/8/Restaurant-Logo-PNG-Image-HD.png"
+                    class="img-fluid w-100 rounded-3 h-100 bg-transparent" alt="" />
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--8. What our customer Says -->
+    <div class="container pt-3">
+        <div class="d-flex justify-content-between">
+            <div class="fs-1 fw-bold px-4">What Our Customer Says</div>
+            <div class="fs-6">
+                <button id="slideleftCard" class="btn btn-warning my-2"> <i
+                        class="fa fa-arrow-left fs-4 p-1 rounded-circle bg-warning"></i> </button>
+                <button id="sliderightCard" class="btn btn-warning"> <i
+                        class="fa fa-arrow-right fs-4 p-1 rounded-circle bg-warning"></i> </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4 w-100" id="scroll-Card-Container" style="overflow-x: hidden;transition: 3.s;">
+        <div class="flex-row d-inline-flex">
+            <div class="p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:20rem;">
+                <div class="fs-4 mt-3 mx-2"> Swallyer Tower</div>
+                <div class="fs-6 mt-3 mb-2 card-subtext mx-2 text-secondary"> "Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quas repudiandae laudantium cumque maiores, et, vero dolor ipsum rem dignissimos
+                    quos est odio velit dicta quod voluptates voluptatum atque? Assumenda placeat repudiandae,
+                    voluptatibus animi minima eveniet veritatis quis obcaecati alias quae". </div>
+            </div>
+
+            <div class="p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:20rem;">
+                <div class="fs-4 mt-3 mx-2">Yusuf pathan</div>
+                <div class="fs-6 mt-3 mb-2 card-subtext mx-2 text-secondary"> "Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quas repudiandae laudantium cumque maiores, et, vero dolor ipsum rem dignissimos
+                    quos est odio velit dicta quod voluptates voluptatum atque? Assumenda placeat repudiandae,
+                    voluptatibus animi minima eveniet veritatis quis obcaecati alias quae". </div>
+            </div>
+
+            <div class="p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:20rem;">
+                <div class="fs-4 mt-3 mx-2">Korvindas</div>
+                <div class="fs-6 mt-3 mb-2 card-subtext mx-2 text-secondary"> "Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quas repudiandae laudantium cumque maiores, et, vero dolor ipsum rem dignissimos
+                    quos est odio velit dicta quod voluptates voluptatum atque? Assumenda placeat repudiandae,
+                    voluptatibus animi minima eveniet veritatis quis obcaecati alias quae". </div>
+            </div>
+
+            <div class="p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:20rem;">
+                <div class="fs-4 mt-3 mx-2">Kerrypochinki</div>
+                <div class="fs-6 mt-3 mb-2 card-subtext mx-2 text-secondary"> "Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quas repudiandae laudantium cumque maiores, et, vero dolor ipsum rem dignissimos
+                    quos est odio velit dicta quod voluptates voluptatum atque? Assumenda placeat repudiandae,
+                    voluptatibus animi minima eveniet veritatis quis obcaecati alias quae". </div>
+            </div>
+
+            <div class="p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:20rem;">
+                <div class="fs-4 mt-3 mx-2">Mosikki wakanda</div>
+                <div class="fs-6 mt-3 mb-2 card-subtext mx-2 text-secondary"> "Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quas repudiandae laudantium cumque maiores, et, vero dolor ipsum rem dignissimos
+                    quos est odio velit dicta quod voluptates voluptatum atque? Assumenda placeat repudiandae,
+                    voluptatibus animi minima eveniet veritatis quis obcaecati alias quae". </div>
+            </div>
+
+            <div class="p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:20rem;">
+                <div class="fs-4 mt-3 mx-2">Halfer Singh</div>
+                <div class="fs-6 mt-3 mb-2 card-subtext mx-2 text-secondary"> "Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quas repudiandae laudantium cumque maiores, et, vero dolor ipsum rem dignissimos
+                    quos est odio velit dicta quod voluptates voluptatum atque? Assumenda placeat repudiandae,
+                    voluptatibus animi minima eveniet veritatis quis obcaecati alias quae". </div>
+            </div>
+
+            <div class="p-2 border mx-1 me-3 shadow rounded-4 border-0" style="width:20rem;">
+                <div class="fs-4 mt-3 mx-2">Chinni Wadeskar</div>
+                <div class="fs-6 mt-3 mb-2 card-subtext mx-2 text-secondary"> "Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quas repudiandae laudantium cumque maiores, et, vero dolor ipsum rem dignissimos
+                    quos est odio velit dicta quod voluptates voluptatum atque? Assumenda placeat repudiandae,
+                    voluptatibus animi minima eveniet veritatis quis obcaecati alias quae". </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center pt-5 text-lg-start bg-transparent text-dark">
+
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <div class="me-5 d-none d-lg-block">
+                <span></span>
+            </div>
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </section>
+
+
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>PACO RESTRO
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Service
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Online Order</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Pre-Reservation</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">24/7 Services</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Foodie Place</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Super Chef</a>
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Quick Links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Menu</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Review</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Blogs</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Reserve Table</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            About
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Our Stroy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Benifits</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Career</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Our Chefs</a>
+                        </p>
+                    </div>
+
+
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">Help</h6>
+                        <p><i class="fas fa-home me-3"></i> Contact</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            Support
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> FAQ</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <div class="text-center p-4 d-flex justify-content-center" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold text-warning mx-1" href="#">pacorestro.com</a>
+        </div>
+
+    </footer>
+
+    <script>
+        const buttonLeft = document.getElementById('slideleft');
+        const buttonRight = document.getElementById('slideright');
+
+        buttonLeft.onclick = function () {
+            document.getElementById('scroll-Container').scrollLeft -= 276;
+            document.getElementById('card').style.transition = "all 3s"
+        }
+
+        buttonRight.onclick = function () {
+            document.getElementById('scroll-Container').scrollLeft += 276;
+            document.getElementById('card').style.transition = "all 3s"
+        }
+
+        const buttonLeftCard = document.getElementById('slideleftCard');
+        const buttonRightCard = document.getElementById('sliderightCard');
+
+        buttonLeftCard.onclick = function () {
+            document.getElementById('scroll-Card-Container').scrollLeft -= 276;
+            document.getElementById('card').style.transition = "all 3s"
+
+        }
+
+        buttonRightCard.onclick = function () {
+            document.getElementById('scroll-Card-Container').scrollLeft += 276;
+            document.getElementById('card').style.transition = "all 3s"
+        }
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
