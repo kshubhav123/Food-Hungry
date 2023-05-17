@@ -2,7 +2,7 @@
 
 This is a template for a restaurant website. It is built with HTML, CSS,Bootstrap and JavaScript. The website includes a home page, a menu page, a contact page, and a blog page.
 
-Features
+Features:
 The home page features a slider with images of the restaurant's food and interior.
 The menu page lists the restaurant's food and drink items.
 The contact page includes the restaurant's address, phone number, and email address.
